@@ -21,13 +21,16 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-   
     
+
 }
 
 .image {
     height: 350px;
     width: 550px;
+    border: 1px grey solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 80px grey;
 }
 
 .next-btn {
