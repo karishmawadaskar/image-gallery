@@ -33,3 +33,23 @@ const imagesArr = [
     imgElement.src = imagesArr[imgIndex];
   }
   setInterval(next,5000);
+
+  function themeToggle() {
+    const body = document.body;
+    const button = document.getElementById('themeToggle');
+
+    if (body.classList.contains('day')) {
+        body.classList.remove('day');
+        body.classList.add('night');
+        button.classList.remove('day');
+        button.classList.add('night');
+
+    } else {
+        body.classList.remove('night');
+        body.classList.add('day');
+        button.classList.remove('night');
+        button.classList.add('day');
+
+    }
+
+}
